@@ -1,0 +1,41 @@
+.header {
+    padding: 50px;
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        grid-column: 3;
+        li {
+            font-weight: 700;
+            font-size: 18px;
+            cursor: pointer;
+            &::after {
+                content: '';
+                display: block;
+                height: 2px;
+                width: 0%;
+                background-color:$main_color;
+            }
+            &:hover {
+                color: $main_color;
+                &::after {
+                    transition: 0.4s all;
+                    content: '';
+                    display: block;
+                    height: 2px;
+                    width: 100%;
+                    background-color:$main_color;
+    
+                }
+            }
+            &:first-child {
+                color: $main_color;
+            }
+        }
+    }
+    &__navbar {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+
+    }
+}

@@ -1,0 +1,34 @@
+.sidepanel {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 340px;
+    top: 250px;
+    left: 50px;
+    &__divider {
+        width: 2px;
+        height: 70px;
+        background-color: $main_color;
+        margin: 0 auto;
+    }
+    &__link {
+        margin: 0 auto;
+        transform: rotate(-90deg);
+
+    }
+    &__text {
+        transform: rotate(-90deg);
+        width: 100px;
+        height: 25px;
+        font-weight: 700;
+        color: $main_color;
+    }
+    &__img {
+        fill: $main_color;
+        transition: 0.3s all;
+        &:hover {
+            fill: $sub_color;
+        }
+    }
+}

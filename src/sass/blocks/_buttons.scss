@@ -1,0 +1,17 @@
+.button {
+    height: 70px;
+    line-height: 70px;
+    background-color: $main_color;
+    border: none;
+    text-align: center;
+    color: #fff;
+    border-radius: 16px;
+    font-size: 16px;
+    padding: 0 50px;
+    cursor: pointer;
+    transition: 0.5s all;
+    @include glow;
+    &_link {
+        margin-top: 40px;
+    }
+}

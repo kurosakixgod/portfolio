@@ -1,0 +1,6 @@
+@mixin glow {
+    &:hover {
+        background-color: $sub_color;
+        box-shadow: 1px 1px 20px $sub_color;
+    }
+}
